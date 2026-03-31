@@ -1,5 +1,7 @@
 # GSC Organic Traffic Intelligence Dashboard
 
+![Opportunity Finder](images/opportunity-finder.png)
+
 A portfolio SEO analytics project that transforms Google Search Console data into a BigQuery data model and a Looker Studio dashboard for analyzing organic growth opportunities, keyword cannibalization, and page momentum.
 
 ## Project Overview
@@ -94,6 +96,15 @@ The dashboard includes:
 
 - Opportunity Finder  
 - Cannibalization Report  
-- Page Momentum Analysis  
+- Page Momentum Analysis
 
 These views help prioritize SEO actions based on real performance data.
+
+#### Opportunity Finder
+![Opportunity Finder](images/opportunity-finder.png)
+
+#### Cannibalization Report
+![Cannibalization](images/cannibalization-report.png)
+
+#### Page Momentum
+![Page Momentum](images/page-momentum.png)
