@@ -44,3 +44,55 @@ images/
   opportunity-finder.png
   cannibalization-report.png
   page-momentum.png
+
+## Main Components
+
+### 1. Data Extraction (Python + GSC API)
+
+The project uses a Python script to extract search performance data from the Google Search Console API.
+
+The export includes:
+- queries
+- pages
+- clicks
+- impressions
+- CTR
+- average position
+- date, device, and country dimensions
+
+This allows flexible and repeatable data collection beyond the GSC interface limitations.
+
+---
+
+### 2. Data Storage (BigQuery)
+
+Raw data is stored in BigQuery and serves as the foundation for all transformations.
+
+The dataset is structured to support scalable analysis and can be updated incrementally.
+
+---
+
+### 3. Data Transformation (SQL)
+
+Several SQL models are used to transform raw data into actionable datasets:
+
+- keyword_daily_metrics → tracks keyword trends over time  
+- page_daily_metrics → tracks page performance  
+- keyword_page_pairs → maps queries to pages  
+- keyword_cannibalization_final → identifies competing pages  
+- seo_opportunity_scores → highlights optimization opportunities  
+- page_momentum_summary → compares performance across time periods  
+
+---
+
+### 4. Data Visualization (Looker Studio)
+
+The transformed data is visualized in Looker Studio dashboards designed for SEO decision-making.
+
+The dashboard includes:
+
+- Opportunity Finder  
+- Cannibalization Report  
+- Page Momentum Analysis  
+
+These views help prioritize SEO actions based on real performance data.
