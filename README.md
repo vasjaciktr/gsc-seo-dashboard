@@ -44,6 +44,7 @@ images/
   opportunity-finder.png
   cannibalization-report.png
   page-momentum.png
+```
 
 ## Main Components
 
